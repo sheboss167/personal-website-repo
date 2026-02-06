@@ -1,6 +1,9 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
 /* General Body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.7;
@@ -9,46 +12,48 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #283593, #5c6bc0);
+    background: linear-gradient(135deg, #ff6f61, #ffb347); /* lively gradient */
     color: white;
     text-align: center;
-    padding: 25px 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 30px 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
+/* Navigation */
 nav {
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 nav a {
-    color: #ffeb3b;
+    color: #fff;
     text-decoration: none;
-    margin: 0 14px;
-    font-weight: bold;
-    font-size: 1.1rem;
+    margin: 0 30px; /* increased spacing */
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #ffffff;
-    text-shadow: 1px 1px 4px #000;
-    transform: scale(1.05);
+    text-shadow: 1px 1px 5px #000;
+    transform: scale(1.1);
 }
 
 /* Sections */
 section {
-    padding: 50px 25px;
-    max-width: 850px;
-    margin: 40px auto;
+    padding: 60px 30px;
+    max-width: 900px;
+    margin: 50px auto;
     background: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
     transition: transform 0.3s ease;
 }
 
@@ -58,17 +63,18 @@ section:hover {
 
 /* Headings */
 section h2 {
-    font-size: 2rem;
-    color: #283593;
+    font-size: 2.2rem;
+    color: #ff6f61;
     margin-bottom: 20px;
-    border-bottom: 2px solid #5c6bc0;
+    border-bottom: 2px solid #ffb347;
     display: inline-block;
     padding-bottom: 6px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Paragraphs */
 section p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     margin-bottom: 15px;
 }
 
@@ -83,7 +89,7 @@ ul li {
     font-size: 1.1rem;
 }
 
-/* Buttons & Form */
+/* Form */
 form {
     display: flex;
     flex-direction: column;
@@ -107,7 +113,7 @@ form button {
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(135deg, #283593, #5c6bc0);
+    background: linear-gradient(135deg, #ff6f61, #ffb347);
     color: #fff;
     font-size: 1.1rem;
     cursor: pointer;
@@ -115,21 +121,21 @@ form button {
 }
 
 form button:hover {
-    background: linear-gradient(135deg, #5c6bc0, #283593);
     transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #283593, #5c6bc0);
+    background: linear-gradient(135deg, #ff6f61, #ffb347);
     color: white;
     text-align: center;
     padding: 15px 10px;
     box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
 }
 
-/* Page-Specific Background Gradients */
-body.index { background: linear-gradient(to bottom right, #e0f7fa, #fffde7); }
+/* Page-Specific Backgrounds */
+body.index { background: linear-gradient(to bottom right, #ffe6e1, #fff7e6); } /* lively */
 body.childhood { background: linear-gradient(to bottom right, #fffde7, #fff3e0); }
 body.education { background: linear-gradient(to bottom right, #e8f5e9, #dcedc8); }
 body.skills { background: linear-gradient(to bottom right, #f3e5f5, #e1bee7); }
@@ -139,6 +145,6 @@ body.contact { background: linear-gradient(to bottom right, #fff3e0, #ffe0b2); }
 /* Responsive */
 @media (max-width: 768px) {
     nav a { display: block; margin: 8px 0; }
-    section { padding: 35px 15px; }
+    section { padding: 40px 20px; }
 }
 
