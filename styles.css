@@ -1,4 +1,4 @@
-/* Import Google Font */
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap');
 
 /* General Body */
@@ -8,6 +8,7 @@ body {
     padding: 0;
     line-height: 1.7;
     color: #1a1a1a;
+    background: linear-gradient(135deg, #ffe6e1, #fff7e6); /* soft lively gradient */
 }
 
 /* Header */
@@ -29,12 +30,13 @@ header h1 {
 /* Navigation */
 nav {
     margin-top: 15px;
+    text-align: center;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 30px;
+    margin: 0 25px; /* spaced nicely */
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -51,7 +53,7 @@ section {
     padding: 60px 30px;
     max-width: 900px;
     margin: 50px auto;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.9); /* slightly translucent card */
     border-radius: 14px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.12);
     transition: transform 0.3s ease;
@@ -134,13 +136,12 @@ footer {
     box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
 }
 
-/* Page-Specific Background Gradients */
-body.index { background: linear-gradient(to bottom right, #ffe6e1, #fff7e6); }        /* lively soft pink/orange */
-body.childhood { background: linear-gradient(to bottom right, #fffde7, #fff3e0); }   /* warm yellow/light peach */
-body.education { background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2); }   /* soft teal/blue */
-body.skills { background: linear-gradient(to bottom right, #f3e5f5, #e1bee7); }       /* lavender/purple */
-body.aspirations { background: linear-gradient(to bottom right, #e1f5fe, #b3e5fc); }  /* light sky blue */
-body.contact { background: linear-gradient(to bottom right, #fff3e0, #ffe0b2); }     /* soft orange/yellow */
+/* Page-specific backgrounds (optional subtle variations) */
+body.childhood { background: linear-gradient(135deg, #fffde7, #fff3e0); }
+body.education { background: linear-gradient(135deg, #e0f7fa, #b2ebf2); }
+body.skills { background: linear-gradient(135deg, #f3e5f5, #e1bee7); }
+body.aspirations { background: linear-gradient(135deg, #e1f5fe, #b3e5fc); }
+body.contact { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
 
 /* Responsive */
 @media (max-width: 768px) {
