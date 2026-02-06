@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #ff6f61, #ffb347); /* lively gradient */
+    background: linear-gradient(135deg, #ff6f61, #ffb347);
     color: white;
     text-align: center;
     padding: 30px 10px;
@@ -34,7 +34,7 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 30px; /* increased spacing */
+    margin: 0 30px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -134,17 +134,16 @@ footer {
     box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
 }
 
-/* Page-Specific Backgrounds */
-body.index { background: linear-gradient(to bottom right, #ffe6e1, #fff7e6); } /* lively */
-body.childhood { background: linear-gradient(to bottom right, #fffde7, #fff3e0); }
-body.education { background: linear-gradient(to bottom right, #e8f5e9, #dcedc8); }
-body.skills { background: linear-gradient(to bottom right, #f3e5f5, #e1bee7); }
-body.aspirations { background: linear-gradient(to bottom right, #e1f5fe, #b3e5fc); }
-body.contact { background: linear-gradient(to bottom right, #fff3e0, #ffe0b2); }
+/* Page-Specific Background Gradients */
+body.index { background: linear-gradient(to bottom right, #ffe6e1, #fff7e6); }        /* lively soft pink/orange */
+body.childhood { background: linear-gradient(to bottom right, #fffde7, #fff3e0); }   /* warm yellow/light peach */
+body.education { background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2); }   /* soft teal/blue */
+body.skills { background: linear-gradient(to bottom right, #f3e5f5, #e1bee7); }       /* lavender/purple */
+body.aspirations { background: linear-gradient(to bottom right, #e1f5fe, #b3e5fc); }  /* light sky blue */
+body.contact { background: linear-gradient(to bottom right, #fff3e0, #ffe0b2); }     /* soft orange/yellow */
 
 /* Responsive */
 @media (max-width: 768px) {
     nav a { display: block; margin: 8px 0; }
     section { padding: 40px 20px; }
 }
-
