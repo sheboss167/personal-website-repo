@@ -1,37 +1,144 @@
+/* General Body */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f9;
-  color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    color: #1a1a1a;
 }
 
+/* Header */
 header {
-  background: #2c3e50;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
+    background: linear-gradient(135deg, #283593, #5c6bc0);
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+nav {
+    margin-top: 12px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
+    color: #ffeb3b;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #000;
+    transform: scale(1.05);
 }
 
+/* Sections */
 section {
-  padding: 20px;
-  text-align: center;
+    padding: 50px 25px;
+    max-width: 850px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
 }
 
-footer {
-  background: #2c3e50;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+section:hover {
+    transform: translateY(-4px);
 }
+
+/* Headings */
+section h2 {
+    font-size: 2rem;
+    color: #283593;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #5c6bc0;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+/* Paragraphs */
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+ul li {
+    padding: 6px 0;
+    font-size: 1.1rem;
+}
+
+/* Buttons & Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #283593, #5c6bc0);
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #5c6bc0, #283593);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #283593, #5c6bc0);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+}
+
+/* Page-Specific Background Gradients */
+body.index { background: linear-gradient(to bottom right, #e0f7fa, #fffde7); }
+body.childhood { background: linear-gradient(to bottom right, #fffde7, #fff3e0); }
+body.education { background: linear-gradient(to bottom right, #e8f5e9, #dcedc8); }
+body.skills { background: linear-gradient(to bottom right, #f3e5f5, #e1bee7); }
+body.aspirations { background: linear-gradient(to bottom right, #e1f5fe, #b3e5fc); }
+body.contact { background: linear-gradient(to bottom right, #fff3e0, #ffe0b2); }
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav a { display: block; margin: 8px 0; }
+    section { padding: 35px 15px; }
+}
+
